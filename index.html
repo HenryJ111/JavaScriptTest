@@ -31,9 +31,7 @@
 					JavaScript Testing Occuring Here Perhaps!!!.  <br/>
 					Are these change working?
 					Did I break this lol!!!! <br/>
-					Is this still updating hopefully? <br/>
-					Still Changing?
-					
+					Is this still updating hopefully? <br/>				
 				</p>
 			</div>
 
@@ -42,7 +40,7 @@
 					Click Here!
 				</button>
 
-				<button  class="button2" type="submit" id="button2">
+				<button  onclick="button2Alert()"class="button2" type="submit" id="button2">
 					Click Here!
 				</button>
 			</div>
@@ -54,9 +52,8 @@
 	</body>
 
 	<script type="text/javascript">
-		document.getElementsByClassName("button2").innerHTML = "DUmB fUcK"
-		if(document.getElementById('button2').clicked == true) {
-			document.getElementById('button2').innerHTML = "Why did you click me :(";	
-		} 	
+		function button2Alert() {
+			document.getElementsByClassName("button2").innerHTML = "DUmB fUcK"	
+		}
 	</script>
 </html>

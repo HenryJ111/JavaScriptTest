@@ -11,7 +11,7 @@
 			.button1 {color: rgb(174, 11, 224); border-radius: 50%; border: 2px solid black;}
 			.button2 {color: rgb(255, 255, 255); background-color: rgb(174, 11, 224); border-radius: 50%; border: 2px solid black;}
 			.button2:hover {background-color: #ff0000}
-			.button2:active {background-color: #67fc04; transform: translateY(100px);
+			.button2:active {background-color: #67fc04;
 			}
 		</style>
 
@@ -28,15 +28,12 @@
         <main>  
 			<div id="intro">
 				<p>
-					JavaScript Testing Occuring Here Perhaps!!!.  <br/>
-					Are these change working?
-					Did I break this lol!!!! <br/>
-					Is this still updating hopefully? <br/>				
+					This is test page for dynamic webpage updating through JavaScript.  <br/>				
 				</p>
 			</div>
 
 			<div>
-				<button onclick="alert('Que te calles coño')" class="button1" type="button">
+				<button onclick="alert('button1 has been pressed')" class="button1" type="button">
 					Click Here!
 				</button>
 
@@ -52,9 +49,9 @@
 	</body>
 
 	<script type="text/javascript">
-		document.getElementsById("button2").innerHTML = "DUmB fUcK";
+		document.getElementsById("button2").innerHTML = "dbutton 2 presse";
 		function button2Alert() {
-			document.getElementsById("button2").innerHTML = "DUmB fUcK";	
+			document.getElementsById("button2").innerHTML = "click here";	
 		}
 	</script>
 </html>

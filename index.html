@@ -11,7 +11,7 @@
 			.button1 {color: rgb(174, 11, 224); border-radius: 50%; border: 2px solid black;}
 			.button2 {color: rgb(255, 255, 255); background-color: rgb(174, 11, 224); border-radius: 50%; border: 2px solid black;}
 			.button2:hover {background-color: #ff0000}
-			.button2:active {background-color: #67fc04; transform: translateY(1000px);
+			.button2:active {background-color: #67fc04; transform: translateY(500px);
 			}
 		</style>
 
@@ -42,7 +42,7 @@
 					Click Here!
 				</button>
 
-				<button  class="button2" type="button" id="button2">
+				<button  class="button2" type="submit" id="button2">
 					Click Here!
 				</button>
 			</div>
@@ -54,6 +54,10 @@
 	</body>
 
 	<script type="text/javascript">
-		document.getElementById("button2").innerHTML = "Why did you click me :(";	
+		if(document.getElementById('button2').clicked == true) {
+			document.getElementById('button2').innerHTML = "Why did you click me :(";	
+		} else {
+			document.getElementById('button2').innerHTML = "Click Here";	
+		}	
 	</script>
 </html>

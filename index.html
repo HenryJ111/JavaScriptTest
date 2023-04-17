@@ -37,7 +37,7 @@
 					Click Here!
 				</button>
 
-				<button  onclick="button2Alert()" class="button2" type="button" id="button2">
+				<button class="button2" type="button" id="button2">
 					Click Here!
 				</button>
 			</div>
@@ -48,10 +48,8 @@
         </footer>
 	</body>
 
-	<script type="text/javascript">
-		document.getElementsById("button2").innerHTML = "dbutton 2 presse";
-		function button2Alert() {
-			document.getElementsById("button2").innerHTML = "click here";	
-		}
+	<script>
+		const button2 = document.querySelector('.button2')
+		button2.addEventListener("click", function () {console.log("HI")})
 	</script>
 </html>

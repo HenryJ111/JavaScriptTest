@@ -8,6 +8,9 @@
 
 		<style>
 			#intro {color: rgb(19, 224, 11)}
+			#section1 {color: black; background: white; text-align: center}
+			#mainbutton {color: rgb(110, 11, 224); border-radius: 50%; border: 2px solid black;}
+			#mainbutton:hover {background-color: aquamarine;}
 			.button1 {color: rgb(174, 11, 224); border-radius: 50%; border: 2px solid black;}
 			.button2 {color: rgb(255, 255, 255); background-color: rgb(174, 11, 224); border-radius: 50%; border: 2px solid black;}
 			.button2:hover {background-color: #ff0000}
@@ -54,6 +57,16 @@
 				<button class ="buttonblock"> Click Here! </button>
 				<button class ="buttonblock"> Click Here! </button>
 			</div>
+
+			<div>
+				<button id = "mainbutton">
+					Click Here!
+				</button>
+			</div>
+
+			<div id="section1">
+
+			</div>
 		</main>
           
         <footer>
@@ -62,17 +75,16 @@
 
 		<script>
 			const button2 = document.querySelector('.button2')
-			//const buttonblock = document.querySelectior('.buttonblock')
-
 			button2.addEventListener("click", button2Clicked)
-			//buttonblock.addEventListener("click", buttonblockClicked)
-
 			function button2Clicked() {
 				alert('button 2 has benn pressed')
 			}
-			/*function buttonblockClicked() {
-				alert('button block has benn pressed')
-			}*/
+
+			document.getElementById("mainbutton").addEventListener("click", mainbuttonClicked)
+			function mainbuttonClicked() {
+				document.getElementById("section1").innerHTML += <p> Button 3 has been pressed! </p>
+			}
+
 		</script>
 	</body>
 </html>

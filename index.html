@@ -47,15 +47,15 @@
 			</div>
 				
 			<div>
-				<button class ="buttonblock"> Click Here! </button>
-				<button class ="buttonblock"> Click Here! </button>
-				<button class ="buttonblock"> Click Here! </button>
-				<button class ="buttonblock"> Click Here! </button>
-				<button class ="buttonblock"> Click Here! </button>
-				<button class ="buttonblock"> Click Here! </button>
-				<button class ="buttonblock"> Click Here! </button>
-				<button class ="buttonblock"> Click Here! </button>
-				<button class ="buttonblock"> Click Here! </button> 
+				<button class ="buttonblock" id = "b1"> 1 </button>
+				<button class ="buttonblock" id = "b2"> 2 </button>
+				<button class ="buttonblock" id = "b3"> 3 </button>
+				<button class ="buttonblock" id = "b4"> 4 </button>
+				<button class ="buttonblock" id = "b5"> 5 </button>
+				<button class ="buttonblock" id = "b6"> 6 </button>
+				<button class ="buttonblock" id = "b7"> 7 </button>
+				<button class ="buttonblock" id = "b8"> 8 </button>
+				<button class ="buttonblock" id = "b9"> 9 </button> 
 			</div>
 
 			<div style = "clear:both">
@@ -85,6 +85,25 @@
 				document.getElementById("section1").innerHTML += "<p> Button 3 has been pressed! </p>"
 			}
 
+			document.getElementById("b1").addEventListener("click", b1Clicked)
+			document.getElementById("b2").addEventListener("click", b2Clicked)
+			document.getElementById("b3").addEventListener("click", b3Clicked)
+			document.getElementById("b4").addEventListener("click", b4Clicked)
+			document.getElementById("b5").addEventListener("click", b5Clicked)
+			document.getElementById("b6").addEventListener("click", b6Clicked)
+			document.getElementById("b7").addEventListener("click", b7Clicked)
+			document.getElementById("b8").addEventListener("click", b8Clicked)
+			document.getElementById("b9").addEventListener("click", b9Clicked)
+
+			function b1Clicked() {document.getElementById("section1").innerHTML += "1"}
+			function b2Clicked() {document.getElementById("section1").innerHTML += "2"}
+			function b3Clicked() {document.getElementById("section1").innerHTML += "3"}
+			function b4Clicked() {document.getElementById("section1").innerHTML += "4"}
+			function b5Clicked() {document.getElementById("section1").innerHTML += "5"}
+			function b6Clicked() {document.getElementById("section1").innerHTML += "6"}
+			function b7Clicked() {document.getElementById("section1").innerHTML += "7"}
+			function b8Clicked() {document.getElementById("section1").innerHTML += "8"}
+			function b9Clicked() {document.getElementById("section1").innerHTML += "9"}
 		</script>
 	</body>
 </html>
